@@ -4,9 +4,9 @@ import { Image, StyleSheet, Text, View, TouchableOpacity, Platform, Button, Anim
 // import logo from './assets/logo.png';
 import uploadToAnonymousFilesAsync from 'anonymous-files';
 import 'react-native-gesture-handler'
-import { NavigationContainer, NavigationContainerProps, StackNavigationState } from '@react-navigation/native'
-import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack'
-import { FadeInView } from './scripts/FadeInView';
+import { NavigationContainer } from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+
 import { HomeScreen } from './scripts/HomeScreen';
 import { DetailScreen } from './scripts/DetailScreen';
 
@@ -14,24 +14,24 @@ const Stack = createStackNavigator();
 
 // 화면 탐색 : https://reactnative.dev/docs/navigation, https://reactnavigation.org/docs/4.x/navigating
 export default class App extends Component {
-  render() {
-    return (
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen 
-            name="Home"
-            component={HomeScreen}
-            options={{ title: 'Welcome!' }}
-          />
-          <Stack.Screen
-            name="Detail"
-            component={DetailScreen}
-            // options={{ title: "hoho" }}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    );
-  }
+    render() {
+        return (
+            <NavigationContainer>
+                <Stack.Navigator>
+                    <Stack.Screen
+                        name="Home"
+                        component={HomeScreen}
+                        options={{ title: 'Welcome!' }}
+                    />
+                    <Stack.Screen
+                        name="Detail"
+                        component={DetailScreen}
+                    // options={{ title: "hoho" }}
+                    />
+                </Stack.Navigator>
+            </NavigationContainer>
+        );
+    }
 }
 
 

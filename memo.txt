@@ -2,3 +2,10 @@ yarn start 로 시작.
 
 JSX 코드의 HTML구문?들을 컴파일 하면 React.createElement... 이 된다. 따라서 import React from 'react'를 빼먹으면 안된다.
 tsx파일 : jsx의 타입스크립트 버전. 사용하려면 jsx옵션을 활성화 해야한다. 
+
+뭔가 설치했는데 metro빌드가 안되고 web빌드만 될때는? sudo npm install을 한번 해준 후 다시 시도.
+
+https://reactnative.dev/docs/navigation
+
+https://reactnavigation.org/docs/bottom-tab-navigator/
+npm install @react-navigation/bottom-tabs
