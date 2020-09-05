@@ -1,1 +1,4 @@
 yarn start 로 시작.
+
+JSX 코드의 HTML구문?들을 컴파일 하면 React.createElement... 이 된다. 따라서 import React from 'react'를 빼먹으면 안된다.
+tsx파일 : jsx의 타입스크립트 버전. 사용하려면 jsx옵션을 활성화 해야한다. 
